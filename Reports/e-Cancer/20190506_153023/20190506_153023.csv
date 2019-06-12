@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-06 15:30:27,2019-05-06 15:30:42,15.578s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-06 15:30:27,2019-05-06 15:30:34,6.870s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-06 15:30:28,2019-05-06 15:30:28,0.057s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-06 15:30:28,2019-05-06 15:30:28,0.015s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-06 15:30:28,2019-05-06 15:30:28,0.008s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 72.0.3626.121,,,2019-05-06 15:30:28,2019-05-06 15:30:28,0.033s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-06 15:30:28,2019-05-06 15:30:31,3.715s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-06 15:30:31,2019-05-06 15:30:31,0.086s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-06 15:30:31,2019-05-06 15:30:32,0.581s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:32,2019-05-06 15:30:34,1.711s,PASSED
+,,,,,,,
+Test Cases/01_Language Toggle,Chrome 72.0.3626.121,To test language toggle for the page,,2019-05-06 15:30:34,2019-05-06 15:30:36,2.130s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",Chrome 72.0.3626.121,,,2019-05-06 15:30:34,2019-05-06 15:30:35,0.966s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Sila lengkapkan borang berikut"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:35,2019-05-06 15:30:35,0.098s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""English"", false)",Chrome 72.0.3626.121,,,2019-05-06 15:30:35,2019-05-06 15:30:36,0.719s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Please complete the form below"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:36,2019-05-06 15:30:36,0.089s,PASSED
+,,,,,,,
+Test Cases/02_DOB Selection,Chrome 72.0.3626.121,To select the date of birth from the date window,,2019-05-06 15:30:36,2019-05-06 15:30:37,1.477s,PASSED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-06 15:30:36,2019-05-06 15:30:36,0.104s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter your Date of Birth"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:36,2019-05-06 15:30:36,0.074s,PASSED
+"setText(findTestObject(""e-Cancer/DOB""), ""12/23/1980"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:36,2019-05-06 15:30:37,0.418s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter a valid Date of Birth"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:37,2019-05-06 15:30:37,0.056s,PASSED
+"setText(findTestObject(""e-Cancer/DOB""), ""01/01/2018"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:37,2019-05-06 15:30:37,0.380s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Sorry, you are not eligible for this insurance because you did not meet the minimum age limit"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:37,2019-05-06 15:30:37,0.107s,PASSED
+"clearText(findTestObject(""e-Cancer/DOB""))",Chrome 72.0.3626.121,,,2019-05-06 15:30:37,2019-05-06 15:30:37,0.070s,PASSED
+,,,,,,,
+Test Cases/03_Gender,Chrome 72.0.3626.121,"This is to test the message for mandatory data, and to select gender.",,2019-05-06 15:30:37,2019-05-06 15:30:41,3.559s,FAILED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-06 15:30:38,2019-05-06 15:30:38,0.111s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Gender Feedback Message""), ""Please select your Gender"")",Chrome 72.0.3626.121,,,2019-05-06 15:30:38,2019-05-06 15:30:38,0.081s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Male""))",Chrome 72.0.3626.121,,,2019-05-06 15:30:38,2019-05-06 15:30:38,0.154s,PASSED
+"verifyElementNotPresent(findTestObject(""e-Cancer/Gender Feedback Message""), 2)",Chrome 72.0.3626.121,,,2019-05-06 15:30:38,2019-05-06 15:30:41,2.873s,FAILED

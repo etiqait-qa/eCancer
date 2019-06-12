@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To select the date of birth from the date window</description>
+   <name>02_DOB Selection</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc470b94-6e01-41a7-b1fe-6fd32ffd5d31</testCaseGuid>
+</TestCaseEntity>

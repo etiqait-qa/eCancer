@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="e-Cancer" time="23" tests="3" failures="1" errors="0">
+   <testsuite name="e-Cancer" tests="3" failures="1" errors="0" time="23" timestamp="2019-05-24 10:40:52" hostname="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR" id="Test Suites/e-Cancer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047"/>
+         <property name="logFiles" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047\\1558665670830.png, C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047\\1558665671407.png"/>
+         <property name="hostName" value="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 72.0.3626.121"/>
+         <property name="hostAddress" value="10.250.104.229"/>
+         <property name="sessionId" value="70689065b1a7c1b416f06b6fc9cec8a9"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/00_Browser Navigation" classname="Test Cases/00_Browser Navigation" status="PASSED">
+         <system-out><![CDATA[2019-05-24 10:40:53 - [TEST_CASE][PASSED] - Test Cases/00_Browser Navigation: Test Cases/00_Browser Navigation
+
+2019-05-24 10:40:53 - [TEST_STEP][PASSED] - options = new org.openqa.selenium.chrome.ChromeOptions(): null
+
+2019-05-24 10:40:53 - [TEST_STEP][PASSED] - capabilities = new org.openqa.selenium.remote.DesiredCapabilities(): null
+
+2019-05-24 10:40:53 - [TEST_STEP][PASSED] - capabilities.setCapability(CAPABILITY, options): null
+
+2019-05-24 10:40:53 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", getChromeDriverPath()): null
+
+2019-05-24 10:40:54 - [TEST_STEP][PASSED] - driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities): null
+
+2019-05-24 10:41:03 - [TEST_STEP][PASSED] - changeWebDriver(driver): null
+
+2019-05-24 10:41:03 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-05-24 10:41:04 - [MESSAGE][PASSED] - Current window maximized
+
+2019-05-24 10:41:04 - [TEST_STEP][PASSED] - navigateToUrl("https://172.29.74.134:4442/cancer-care/en/takaful/qq1"): Navigate to 'https://172.29.74.134:4442/cancer-care/en/takaful/qq1' successfully
+
+2019-05-24 10:41:07 - [MESSAGE][PASSED] - Navigate to 'https://172.29.74.134:4442/cancer-care/en/takaful/qq1' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01_Language Toggle" classname="Test Cases/01_Language Toggle" status="PASSED">
+         <system-out><![CDATA[2019-05-24 10:41:07 - [TEST_CASE][PASSED] - Test Cases/01_Language Toggle: Test Cases/01_Language Toggle
+
+2019-05-24 10:41:07 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("e-Cancer/Language Option"), "B.Malaysia", false): All options with label 'B.Malaysia' are selected in object 'Object Repository/e-Cancer/Language Option' 
+
+2019-05-24 10:41:08 - [MESSAGE][PASSED] - All options with label 'B.Malaysia' are selected in object 'Object Repository/e-Cancer/Language Option' 
+
+2019-05-24 10:41:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("e-Cancer/Form Instruction"), "Sila lengkapkan borang berikut"): Actual text and expected text of test object 'Object Repository/e-Cancer/Form Instruction' are matched.
+
+2019-05-24 10:41:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/e-Cancer/Form Instruction' are matched.
+
+2019-05-24 10:41:08 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("e-Cancer/Language Option"), "English", false): All options with label 'English' are selected in object 'Object Repository/e-Cancer/Language Option' 
+
+2019-05-24 10:41:09 - [MESSAGE][PASSED] - All options with label 'English' are selected in object 'Object Repository/e-Cancer/Language Option' 
+
+2019-05-24 10:41:09 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("e-Cancer/Form Instruction"), "Please complete the form below"): Actual text and expected text of test object 'Object Repository/e-Cancer/Form Instruction' are matched.
+
+2019-05-24 10:41:09 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/e-Cancer/Form Instruction' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_DOB Selection" classname="Test Cases/02_DOB Selection" status="FAILED">
+         <failure type="FAILED" message="Test Cases/02_DOB Selection FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2019-05-24 10:41:09 - [TEST_CASE][FAILED] - Test Cases/02_DOB Selection: Test Cases/02_DOB Selection FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2019-05-24 10:41:09 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Next")): Object: 'Object Repository/e-Cancer/Next' is clicked on
+
+2019-05-24 10:41:10 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Next' is clicked on
+
+2019-05-24 10:41:10 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("e-Cancer/DOB Feedback Message"), "Please enter your Date of Birth"): Actual text and expected text of test object 'Object Repository/e-Cancer/DOB Feedback Message' are matched.
+
+2019-05-24 10:41:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/e-Cancer/DOB Feedback Message' are matched.
+
+2019-05-24 10:41:10 - [TEST_STEP][PASSED] - setText(findTestObject("e-Cancer/DOB"), "12/23/1980"): Text '12/23/1980' is set on object 'Object Repository/e-Cancer/DOB'
+
+2019-05-24 10:41:10 - [MESSAGE][PASSED] - Text '12/23/1980' is set on object 'Object Repository/e-Cancer/DOB'
+
+2019-05-24 10:41:10 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("e-Cancer/DOB Feedback Message"), "Please enter a valid Date of Birth"): Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+
+2019-05-24 10:41:11 - [MESSAGE][FAILED] - Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+)
+[[ATTACHMENT|C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047\\1558665670830.png]]
+
+2019-05-24 10:41:11 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+[[ATTACHMENT|C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190524_104047\\1558665671407.png]]]]></system-out>
+         <system-err><![CDATA[2019-05-24 10:41:09 - [TEST_CASE][FAILED] - Test Cases/02_DOB Selection: Test Cases/02_DOB Selection FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/03_Gender" classname="Test Cases/03_Gender" status="PASSED">
+         <system-out><![CDATA[2019-05-24 10:41:11 - [TEST_CASE][PASSED] - Test Cases/03_Gender: Test Cases/03_Gender
+
+2019-05-24 10:41:12 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Next")): Object: 'Object Repository/e-Cancer/Next' is clicked on
+
+2019-05-24 10:41:12 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Next' is clicked on
+
+2019-05-24 10:41:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("e-Cancer/Gender Feedback Message"), "Please select your Gender"): Actual text and expected text of test object 'Object Repository/e-Cancer/Gender Feedback Message' are matched.
+
+2019-05-24 10:41:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/e-Cancer/Gender Feedback Message' are matched.
+
+2019-05-24 10:41:12 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Gender - Male")): Object: 'Object Repository/e-Cancer/Gender - Male' is clicked on
+
+2019-05-24 10:41:12 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Gender - Male' is clicked on
+
+2019-05-24 10:41:12 - [TEST_STEP][PASSED] - verifyElementNotVisible(findTestObject("e-Cancer/Gender Feedback Message"), STOP_ON_FAILURE): Object 'Object Repository/e-Cancer/Gender Feedback Message' is NOT visible
+
+2019-05-24 10:41:12 - [MESSAGE][PASSED] - Object 'Object Repository/e-Cancer/Gender Feedback Message' is NOT visible
+
+2019-05-24 10:41:12 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Gender - Female")): Object: 'Object Repository/e-Cancer/Gender - Female' is clicked on
+
+2019-05-24 10:41:14 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Gender - Female' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-05-24 10:40:52 - [TEST_SUITE][FAILED] - e-Cancer: Test Cases/02_DOB Selection FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2019-05-24 10:40:52 - [TEST_SUITE][FAILED] - e-Cancer: Test Cases/02_DOB Selection FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/e-Cancer/DOB Feedback Message' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$2.call(Unknown Source)
+	at 02_DOB Selection.run(02_DOB Selection:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:336)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:327)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:306)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:298)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:232)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1558665647657.run(TempTestSuite1558665647657.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit' and expected text 'Please enter a valid Date of Birth' of test object 'Object Repository/e-Cancer/DOB Feedback Message' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

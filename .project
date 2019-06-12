@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>D%%Katalon%e-Cancer%e-Cancer.prj</name>
+	<name>C%%Users%00130257%Katalon Studio%e-Cancer%e-Cancer.prj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +17,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1560332526622</id>
+			<id>1556089687159</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +26,25 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1560332526637</id>
+			<id>1556089687206</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1560332089349</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1560332089366</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

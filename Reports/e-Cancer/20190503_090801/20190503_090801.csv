@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-03 09:08:10,2019-05-03 09:08:46,36.647s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-03 09:08:11,2019-05-03 09:08:38,26.917s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-03 09:08:13,2019-05-03 09:08:13,0.138s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-03 09:08:13,2019-05-03 09:08:13,0.035s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-03 09:08:13,2019-05-03 09:08:13,0.085s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"")",Chrome 72.0.3626.121,,,2019-05-03 09:08:13,2019-05-03 09:08:13,0.007s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-03 09:08:13,2019-05-03 09:08:22,8.908s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-03 09:08:22,2019-05-03 09:08:23,0.529s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-03 09:08:23,2019-05-03 09:08:24,1.302s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-05-03 09:08:24,2019-05-03 09:08:38,13.671s,PASSED
+,,,,,,,
+Test Cases/03_Gender,Chrome 72.0.3626.121,"This is to test the message for mandatory data, and to select gender.",,2019-05-03 09:08:38,2019-05-03 09:08:45,6.961s,FAILED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-03 09:08:39,2019-05-03 09:08:39,0.570s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Gender Feedback Message""), ""Please select your Gender"")",Chrome 72.0.3626.121,,,2019-05-03 09:08:39,2019-05-03 09:08:40,0.259s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Male""))",Chrome 72.0.3626.121,,,2019-05-03 09:08:40,2019-05-03 09:08:40,0.752s,PASSED
+"verifyElementNotPresent(findTestObject(""e-Cancer/Gender Feedback Message""), 2)",Chrome 72.0.3626.121,,,2019-05-03 09:08:40,2019-05-03 09:08:45,4.222s,FAILED

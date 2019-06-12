@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-04-25 17:15:23,2019-04-25 17:15:43,20.603s,PASSED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-04-25 17:15:23,2019-04-25 17:15:30,7.065s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-04-25 17:15:24,2019-04-25 17:15:24,0.036s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-04-25 17:15:24,2019-04-25 17:15:24,0.010s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-04-25 17:15:24,2019-04-25 17:15:24,0.043s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"")",Chrome 72.0.3626.121,,,2019-04-25 17:15:24,2019-04-25 17:15:24,0.006s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-04-25 17:15:24,2019-04-25 17:15:27,3.807s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-04-25 17:15:27,2019-04-25 17:15:28,0.075s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-04-25 17:15:28,2019-04-25 17:15:28,0.457s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-04-25 17:15:28,2019-04-25 17:15:30,1.942s,PASSED
+,,,,,,,
+Test Cases/10_Underwriting Question - Question,Chrome 72.0.3626.121,,,2019-04-25 17:15:30,2019-04-25 17:15:42,11.984s,PASSED
+"sendKeys(findTestObject(""e-Cancer/DOB""), ""01/01/1980"")",Chrome 72.0.3626.121,,,2019-04-25 17:15:30,2019-04-25 17:15:31,0.318s,PASSED
+"click(findTestObject(""e-Cancer/Form Instruction""))",Chrome 72.0.3626.121,,,2019-04-25 17:15:31,2019-04-25 17:15:31,0.210s,PASSED
+"if (Gender == ""Male"")",Chrome 72.0.3626.121,,,2019-04-25 17:15:31,2019-04-25 17:15:31,0.667s,PASSED
+"click(findTestObject(""e-Cancer/Package Selection""))",Chrome 72.0.3626.121,,,2019-04-25 17:15:31,2019-04-25 17:15:32,0.175s,PASSED
+"dragAndDropByOffset(findTestObject(""e-Cancer/Package Screen Objects/Coverage Slider""), 5000, 0)",Chrome 72.0.3626.121,,,2019-04-25 17:15:32,2019-04-25 17:15:32,0.239s,PASSED
+delay(10),Chrome 72.0.3626.121,,,2019-04-25 17:15:32,2019-04-25 17:15:42,10.046s,PASSED

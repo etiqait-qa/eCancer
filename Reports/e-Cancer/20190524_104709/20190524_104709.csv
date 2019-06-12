@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-24 10:47:13,2019-05-24 10:47:34,20.724s,PASSED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-24 10:47:13,2019-05-24 10:47:25,11.817s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-24 10:47:14,2019-05-24 10:47:14,0.060s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-24 10:47:14,2019-05-24 10:47:14,0.010s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-24 10:47:14,2019-05-24 10:47:14,0.042s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 72.0.3626.121,,,2019-05-24 10:47:14,2019-05-24 10:47:14,0.029s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-24 10:47:14,2019-05-24 10:47:18,4.054s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-24 10:47:18,2019-05-24 10:47:18,0.066s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-24 10:47:18,2019-05-24 10:47:19,0.491s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:19,2019-05-24 10:47:25,6.392s,PASSED
+,,,,,,,
+Test Cases/01_Language Toggle,Chrome 72.0.3626.121,To test language toggle for the page,,2019-05-24 10:47:25,2019-05-24 10:47:30,5.135s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",Chrome 72.0.3626.121,,,2019-05-24 10:47:26,2019-05-24 10:47:29,3.111s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Sila lengkapkan borang berikut"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:29,2019-05-24 10:47:29,0.085s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""English"", false)",Chrome 72.0.3626.121,,,2019-05-24 10:47:29,2019-05-24 10:47:30,1.597s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Please complete the form below"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:30,2019-05-24 10:47:30,0.086s,PASSED
+,,,,,,,
+Test Cases/02_DOB Selection,Chrome 72.0.3626.121,To select the date of birth from the date window,,2019-05-24 10:47:30,2019-05-24 10:47:31,0.998s,PASSED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-24 10:47:31,2019-05-24 10:47:31,0.134s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter your Date of Birth"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:31,2019-05-24 10:47:31,0.114s,PASSED
+"setText(findTestObject(""e-Cancer/DOB""), ""01/01/2018"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:31,2019-05-24 10:47:31,0.305s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Sorry, you are not eligible for this insurance because you did not meet the minimum age limit"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:31,2019-05-24 10:47:31,0.079s,PASSED
+"clearText(findTestObject(""e-Cancer/DOB""))",Chrome 72.0.3626.121,,,2019-05-24 10:47:31,2019-05-24 10:47:31,0.126s,PASSED
+,,,,,,,
+Test Cases/03_Gender,Chrome 72.0.3626.121,"This is to test the message for mandatory data, and to select gender.",,2019-05-24 10:47:31,2019-05-24 10:47:32,0.928s,PASSED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-24 10:47:32,2019-05-24 10:47:32,0.098s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Gender Feedback Message""), ""Please select your Gender"")",Chrome 72.0.3626.121,,,2019-05-24 10:47:32,2019-05-24 10:47:32,0.129s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Male""))",Chrome 72.0.3626.121,,,2019-05-24 10:47:32,2019-05-24 10:47:32,0.158s,PASSED
+"verifyElementNotVisible(findTestObject(""e-Cancer/Gender Feedback Message""), STOP_ON_FAILURE)",Chrome 72.0.3626.121,,,2019-05-24 10:47:32,2019-05-24 10:47:32,0.095s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Female""))",Chrome 72.0.3626.121,,,2019-05-24 10:47:32,2019-05-24 10:47:32,0.135s,PASSED

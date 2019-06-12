@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-06 10:07:11,2019-05-06 10:07:50,39.105s,PASSED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-06 10:07:12,2019-05-06 10:07:32,19.940s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-06 10:07:14,2019-05-06 10:07:14,0.139s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-06 10:07:14,2019-05-06 10:07:14,0.060s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-06 10:07:14,2019-05-06 10:07:15,0.251s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 72.0.3626.121,,,2019-05-06 10:07:15,2019-05-06 10:07:15,0.123s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-06 10:07:15,2019-05-06 10:07:25,10.374s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-06 10:07:25,2019-05-06 10:07:25,0.177s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-06 10:07:25,2019-05-06 10:07:27,1.270s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-05-06 10:07:27,2019-05-06 10:07:32,5.575s,PASSED
+,,,,,,,
+Test Cases/10_Underwriting Question - Question,Chrome 72.0.3626.121,,,2019-05-06 10:07:32,2019-05-06 10:07:48,16.064s,PASSED
+"sendKeys(findTestObject(""e-Cancer/DOB""), ""01/01/1980"")",Chrome 72.0.3626.121,,,2019-05-06 10:07:33,2019-05-06 10:07:34,0.906s,PASSED
+"click(findTestObject(""e-Cancer/Form Instruction""))",Chrome 72.0.3626.121,,,2019-05-06 10:07:34,2019-05-06 10:07:34,0.423s,PASSED
+"if (Gender == ""Male"")",Chrome 72.0.3626.121,,,2019-05-06 10:07:34,2019-05-06 10:07:35,0.762s,PASSED
+"click(findTestObject(""e-Cancer/Package Selection""))",Chrome 72.0.3626.121,,,2019-05-06 10:07:35,2019-05-06 10:07:36,0.731s,PASSED
+"click(findTestObject(""Object Repository/e-Cancer/Package Screen Objects/span_RM_slider-amount-agreed""))",Chrome 72.0.3626.121,,,2019-05-06 10:07:36,2019-05-06 10:07:37,1.025s,PASSED
+"click(findTestObject(""Object Repository/e-Cancer/Package Screen Objects/div_Years""))",Chrome 72.0.3626.121,,,2019-05-06 10:07:37,2019-05-06 10:07:38,0.673s,PASSED
+delay(10),Chrome 72.0.3626.121,,,2019-05-06 10:07:38,2019-05-06 10:07:48,10.172s,PASSED
+"click(findTestObject(""Object Repository/e-Cancer/Package Screen Objects/button_Save""))",Chrome 72.0.3626.121,,,2019-05-06 10:07:48,2019-05-06 10:07:48,0.465s,PASSED

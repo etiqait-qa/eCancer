@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="e-Cancer" time="10" tests="2" failures="0" errors="0">
+   <testsuite name="e-Cancer" tests="2" failures="0" errors="0" time="10" timestamp="2019-04-25 17:14:41" hostname="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR" id="Test Suites/e-Cancer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190425_171437"/>
+         <property name="logFiles" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190425_171437\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 72.0.3626.121"/>
+         <property name="hostAddress" value="10.250.104.229"/>
+         <property name="sessionId" value="5a5bf5758d38ec18748851a05b6be485"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/00_Browser Navigation" classname="Test Cases/00_Browser Navigation" status="PASSED">
+         <system-out><![CDATA[2019-04-25 17:14:41 - [TEST_CASE][PASSED] - Test Cases/00_Browser Navigation: Test Cases/00_Browser Navigation
+
+2019-04-25 17:14:42 - [TEST_STEP][PASSED] - options = new org.openqa.selenium.chrome.ChromeOptions(): null
+
+2019-04-25 17:14:42 - [TEST_STEP][PASSED] - capabilities = new org.openqa.selenium.remote.DesiredCapabilities(): null
+
+2019-04-25 17:14:42 - [TEST_STEP][PASSED] - capabilities.setCapability(CAPABILITY, options): null
+
+2019-04-25 17:14:42 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", "D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"): null
+
+2019-04-25 17:14:42 - [TEST_STEP][PASSED] - driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities): null
+
+2019-04-25 17:14:46 - [TEST_STEP][PASSED] - changeWebDriver(driver): null
+
+2019-04-25 17:14:46 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-25 17:14:46 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-25 17:14:46 - [TEST_STEP][PASSED] - navigateToUrl("https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"): Navigate to 'https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1' successfully
+
+2019-04-25 17:14:48 - [MESSAGE][PASSED] - Navigate to 'https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/10_Underwriting Question - Question" classname="Test Cases/10_Underwriting Question - Question" status="PASSED">
+         <system-out><![CDATA[2019-04-25 17:14:48 - [TEST_CASE][PASSED] - Test Cases/10_Underwriting Question - Question: Test Cases/10_Underwriting Question - Question
+
+2019-04-25 17:14:49 - [TEST_STEP][PASSED] - sendKeys(findTestObject("e-Cancer/DOB"), "01/01/1980"): Keys '01/01/1980' sent to object: 'Object Repository/e-Cancer/DOB'
+
+2019-04-25 17:14:49 - [MESSAGE][PASSED] - Keys '01/01/1980' sent to object: 'Object Repository/e-Cancer/DOB'
+
+2019-04-25 17:14:49 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Form Instruction")): Object: 'Object Repository/e-Cancer/Form Instruction' is clicked on
+
+2019-04-25 17:14:49 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Form Instruction' is clicked on
+
+2019-04-25 17:14:49 - [TEST_STEP][PASSED] - if (Gender == "Male"): Object: 'Object Repository/e-Cancer/Gender - Male' is clicked on
+
+2019-04-25 17:14:49 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Gender - Male")): Object: 'Object Repository/e-Cancer/Gender - Male' is clicked on
+
+2019-04-25 17:14:49 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Gender - Male' is clicked on
+
+2019-04-25 17:14:49 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Package Selection")): Object: 'Object Repository/e-Cancer/Package Selection' is clicked on
+
+2019-04-25 17:14:50 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Package Selection' is clicked on
+
+2019-04-25 17:14:50 - [TEST_STEP][PASSED] - dragAndDropByOffset(findTestObject("e-Cancer/Package Screen Objects/Coverage Slider"), 5000, 0): Dragged object with id 'Object Repository/e-Cancer/Package Screen Objects/Coverage Slider' by offset distance x = 5,000 and y = 0 successfully
+
+2019-04-25 17:14:50 - [MESSAGE][PASSED] - Dragged object with id 'Object Repository/e-Cancer/Package Screen Objects/Coverage Slider' by offset distance x = 5,000 and y = 0 successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-25 17:14:41 - [TEST_SUITE][PASSED] - e-Cancer: Test Cases/10_Underwriting Question - Question]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

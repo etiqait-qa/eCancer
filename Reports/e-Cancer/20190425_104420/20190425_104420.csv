@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-04-25 10:44:30,2019-04-25 10:45:02,32.428s,PASSED
+,,,,,,,
+Test Cases/Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-04-25 10:44:31,2019-04-25 10:44:50,19.254s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-04-25 10:44:33,2019-04-25 10:44:33,0.123s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-04-25 10:44:33,2019-04-25 10:44:33,0.023s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-04-25 10:44:33,2019-04-25 10:44:33,0.137s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"")",Chrome 72.0.3626.121,,,2019-04-25 10:44:33,2019-04-25 10:44:33,0.010s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-04-25 10:44:33,2019-04-25 10:44:44,10.855s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-04-25 10:44:44,2019-04-25 10:44:45,0.240s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-04-25 10:44:45,2019-04-25 10:44:46,1.561s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-04-25 10:44:46,2019-04-25 10:44:50,4.189s,PASSED
+,,,,,,,
+Test Cases/Language Toggle,Chrome 72.0.3626.121,To test language toggle for the page,,2019-04-25 10:44:50,2019-04-25 10:44:59,9.099s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",Chrome 72.0.3626.121,,,2019-04-25 10:44:51,2019-04-25 10:44:56,5.145s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Sila lengkapkan borang berikut"")",Chrome 72.0.3626.121,,,2019-04-25 10:44:56,2019-04-25 10:44:57,0.573s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""English"", false)",Chrome 72.0.3626.121,,,2019-04-25 10:44:57,2019-04-25 10:44:59,2.215s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Please complete the form below"")",Chrome 72.0.3626.121,,,2019-04-25 10:44:59,2019-04-25 10:44:59,0.221s,PASSED
+,,,,,,,
+Test Cases/DOB Selection,Chrome 72.0.3626.121,To select the date of birth from the date window,,2019-04-25 10:44:59,2019-04-25 10:45:00,0.812s,PASSED
+return null,Chrome 72.0.3626.121,,,2019-04-25 10:45:00,2019-04-25 10:45:00,0.000s,PASSED

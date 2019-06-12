@@ -3,7 +3,7 @@
    <description></description>
    <name>e-Cancer</name>
    <tag></tag>
-   <UUID>735abd08-d571-4ffc-98c4-9bca524d722b</UUID>
+   <UUID>a414ec87-ce8d-4fe4-a667-a8ecdf9e07a5</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <sourceContent>
@@ -24,5 +24,5 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
-   <type>GENERIC</type>
+   <type>WEBUI</type>
 </Project>

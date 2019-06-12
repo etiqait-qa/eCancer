@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="e-Cancer" time="24" tests="2" failures="0" errors="0">
+   <testsuite name="e-Cancer" tests="2" failures="0" errors="0" time="24" timestamp="2019-04-25 12:16:08" hostname="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR" id="Test Suites/e-Cancer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190425_121558"/>
+         <property name="logFiles" value="C:\\Users\\00130257\\Katalon Studio\\e-Cancer\\Reports\\e-Cancer\\20190425_121558\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="00130257 - LTEIBCE514928.etiqa-my.MBB.DIR"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+         <property name="browser" value="Chrome 72.0.3626.121"/>
+         <property name="hostAddress" value="10.250.104.229"/>
+         <property name="sessionId" value="16887f804327c85ee5d918746bd6b9b2"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Browser Navigation" classname="Test Cases/Browser Navigation" status="PASSED">
+         <system-out><![CDATA[2019-04-25 12:16:08 - [TEST_CASE][PASSED] - Test Cases/Browser Navigation: Test Cases/Browser Navigation
+
+2019-04-25 12:16:10 - [TEST_STEP][PASSED] - options = new org.openqa.selenium.chrome.ChromeOptions(): null
+
+2019-04-25 12:16:10 - [TEST_STEP][PASSED] - capabilities = new org.openqa.selenium.remote.DesiredCapabilities(): null
+
+2019-04-25 12:16:10 - [TEST_STEP][PASSED] - capabilities.setCapability(CAPABILITY, options): null
+
+2019-04-25 12:16:10 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", "D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"): null
+
+2019-04-25 12:16:10 - [TEST_STEP][PASSED] - driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities): null
+
+2019-04-25 12:16:20 - [TEST_STEP][PASSED] - changeWebDriver(driver): null
+
+2019-04-25 12:16:21 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-25 12:16:22 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-25 12:16:22 - [TEST_STEP][PASSED] - navigateToUrl("https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"): Navigate to 'https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1' successfully
+
+2019-04-25 12:16:27 - [MESSAGE][PASSED] - Navigate to 'https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DOB Selection" classname="Test Cases/DOB Selection" status="PASSED">
+         <system-out><![CDATA[2019-04-25 12:16:27 - [TEST_CASE][PASSED] - Test Cases/DOB Selection: Test Cases/DOB Selection
+
+2019-04-25 12:16:28 - [TEST_STEP][PASSED] - click(findTestObject("e-Cancer/Next Button")): Object: 'Object Repository/e-Cancer/Next Button' is clicked on
+
+2019-04-25 12:16:30 - [MESSAGE][PASSED] - Object: 'Object Repository/e-Cancer/Next Button' is clicked on
+
+2019-04-25 12:16:30 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("e-Cancer/DOB Feedback Message"), "Please enter your Date of Birth"): Actual text and expected text of test object 'Object Repository/e-Cancer/DOB Feedback Message' are matched.
+
+2019-04-25 12:16:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/e-Cancer/DOB Feedback Message' are matched.]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-25 12:16:08 - [TEST_SUITE][PASSED] - e-Cancer: Test Cases/DOB Selection]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

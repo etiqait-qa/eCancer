@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This is to test the message for mandatory data, and to select gender.</description>
+   <name>03_Gender</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6656fd4-a2e5-4370-8351-20ae64298429</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-03 09:07:35,2019-05-03 09:07:56,21.480s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-03 09:07:36,2019-05-03 09:07:51,15.811s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-03 09:07:38,2019-05-03 09:07:38,0.150s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-03 09:07:38,2019-05-03 09:07:38,0.028s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-03 09:07:38,2019-05-03 09:07:38,0.104s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"")",Chrome 72.0.3626.121,,,2019-05-03 09:07:38,2019-05-03 09:07:38,0.008s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-03 09:07:38,2019-05-03 09:07:49,10.757s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-03 09:07:49,2019-05-03 09:07:50,0.446s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-03 09:07:50,2019-05-03 09:07:51,1.335s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-05-03 09:07:51,2019-05-03 09:07:51,0.476s,PASSED
+,,,,,,,
+Test Cases/03_Gender,Chrome 72.0.3626.121,"This is to test the message for mandatory data, and to select gender.",,2019-05-03 09:07:52,2019-05-03 09:07:55,3.265s,FAILED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-03 09:07:54,2019-05-03 09:07:55,0.625s,FAILED

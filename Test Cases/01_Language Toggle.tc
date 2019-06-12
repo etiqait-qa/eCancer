@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To test language toggle for the page</description>
+   <name>01_Language Toggle</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6cdda477-d730-40ea-b4a6-bba3c4e1ea3e</testCaseGuid>
+</TestCaseEntity>

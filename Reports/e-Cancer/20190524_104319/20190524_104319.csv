@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-05-24 10:43:22,2019-05-24 10:43:41,18.704s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-05-24 10:43:23,2019-05-24 10:43:32,9.469s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-05-24 10:43:23,2019-05-24 10:43:23,0.045s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-05-24 10:43:23,2019-05-24 10:43:23,0.006s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-05-24 10:43:23,2019-05-24 10:43:23,0.030s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 72.0.3626.121,,,2019-05-24 10:43:23,2019-05-24 10:43:23,0.024s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-05-24 10:43:23,2019-05-24 10:43:29,5.481s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-05-24 10:43:29,2019-05-24 10:43:29,0.078s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-05-24 10:43:29,2019-05-24 10:43:30,0.673s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:30,2019-05-24 10:43:32,2.465s,PASSED
+,,,,,,,
+Test Cases/01_Language Toggle,Chrome 72.0.3626.121,To test language toggle for the page,,2019-05-24 10:43:32,2019-05-24 10:43:35,3.141s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",Chrome 72.0.3626.121,,,2019-05-24 10:43:32,2019-05-24 10:43:33,1.136s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Sila lengkapkan borang berikut"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:33,2019-05-24 10:43:34,0.108s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""English"", false)",Chrome 72.0.3626.121,,,2019-05-24 10:43:34,2019-05-24 10:43:35,1.493s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Please complete the form below"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:35,2019-05-24 10:43:35,0.052s,PASSED
+,,,,,,,
+Test Cases/02_DOB Selection,Chrome 72.0.3626.121,To select the date of birth from the date window,,2019-05-24 10:43:35,2019-05-24 10:43:39,3.690s,FAILED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-24 10:43:35,2019-05-24 10:43:36,0.157s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter your Date of Birth"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:36,2019-05-24 10:43:36,0.105s,PASSED
+"setText(findTestObject(""e-Cancer/DOB""), ""12/23/1980"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:36,2019-05-24 10:43:36,0.318s,PASSED
+delay(2),Chrome 72.0.3626.121,,,2019-05-24 10:43:36,2019-05-24 10:43:38,2.055s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter a valid Date of Birth"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:38,2019-05-24 10:43:39,0.792s,FAILED
+,,,,,,,
+Test Cases/03_Gender,Chrome 72.0.3626.121,"This is to test the message for mandatory data, and to select gender.",,2019-05-24 10:43:39,2019-05-24 10:43:40,0.702s,PASSED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 72.0.3626.121,,,2019-05-24 10:43:39,2019-05-24 10:43:39,0.091s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Gender Feedback Message""), ""Please select your Gender"")",Chrome 72.0.3626.121,,,2019-05-24 10:43:39,2019-05-24 10:43:39,0.076s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Male""))",Chrome 72.0.3626.121,,,2019-05-24 10:43:39,2019-05-24 10:43:39,0.140s,PASSED
+"verifyElementNotVisible(findTestObject(""e-Cancer/Gender Feedback Message""), STOP_ON_FAILURE)",Chrome 72.0.3626.121,,,2019-05-24 10:43:39,2019-05-24 10:43:39,0.068s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Female""))",Chrome 72.0.3626.121,,,2019-05-24 10:43:39,2019-05-24 10:43:40,0.106s,PASSED

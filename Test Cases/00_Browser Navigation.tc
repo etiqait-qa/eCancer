@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To open the browser and naviage to the specific URL</description>
+   <name>00_Browser Navigation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b0132e7-0347-4fa8-9fc4-a540b896a50a</testCaseGuid>
+</TestCaseEntity>

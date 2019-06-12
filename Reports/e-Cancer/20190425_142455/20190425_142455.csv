@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 72.0.3626.121,To test e-Cancer functionalities,,2019-04-25 14:25:00,2019-04-25 14:25:13,12.743s,PASSED
+,,,,,,,
+Test Cases/Browser Navigation,Chrome 72.0.3626.121,To open the browser and naviage to the specific URL,,2019-04-25 14:25:00,2019-04-25 14:25:09,9.223s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 72.0.3626.121,,,2019-04-25 14:25:01,2019-04-25 14:25:01,0.041s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 72.0.3626.121,,,2019-04-25 14:25:01,2019-04-25 14:25:01,0.007s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 72.0.3626.121,,,2019-04-25 14:25:01,2019-04-25 14:25:01,0.038s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:/Installer/Katalon Studio 6.1.2/chromedriver.exe"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:01,2019-04-25 14:25:01,0.002s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 72.0.3626.121,,,2019-04-25 14:25:01,2019-04-25 14:25:06,5.093s,PASSED
+changeWebDriver(driver),Chrome 72.0.3626.121,,,2019-04-25 14:25:06,2019-04-25 14:25:06,0.091s,PASSED
+maximizeWindow(),Chrome 72.0.3626.121,,,2019-04-25 14:25:06,2019-04-25 14:25:07,0.547s,PASSED
+"navigateToUrl(""https://uat.etiqa.com.my:4442/cancer-care/en/insurance/qq1"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:07,2019-04-25 14:25:09,2.640s,PASSED
+,,,,,,,
+Test Cases/DOB Selection,Chrome 72.0.3626.121,To select the date of birth from the date window,,2019-04-25 14:25:09,2019-04-25 14:25:11,2.011s,PASSED
+"click(findTestObject(""e-Cancer/Next Button""))",Chrome 72.0.3626.121,,,2019-04-25 14:25:10,2019-04-25 14:25:10,0.216s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter your Date of Birth"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:10,2019-04-25 14:25:10,0.141s,PASSED
+"setText(findTestObject(""e-Cancer/DOB Field""), ""12/23/1980"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:10,2019-04-25 14:25:11,0.631s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter a valid Date of Birth"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:11,2019-04-25 14:25:11,0.162s,PASSED
+"setText(findTestObject(""e-Cancer/DOB Field""), ""01/01/2018"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:11,2019-04-25 14:25:11,0.372s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Sorry, you are not eligible for this insurance because you did not meet the minimum age limit"")",Chrome 72.0.3626.121,,,2019-04-25 14:25:11,2019-04-25 14:25:11,0.116s,PASSED
