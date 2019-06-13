@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 74.0.3729.169,To test e-Cancer functionalities,,2019-06-13 09:53:52,2019-06-13 09:54:30,37.314s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 74.0.3729.169,To open the browser and naviage to the specific URL,,2019-06-13 09:53:53,2019-06-13 09:54:17,23.964s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 74.0.3729.169,,,2019-06-13 09:53:55,2019-06-13 09:53:55,0.091s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 74.0.3729.169,,,2019-06-13 09:53:55,2019-06-13 09:53:55,0.019s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 74.0.3729.169,,,2019-06-13 09:53:55,2019-06-13 09:53:55,0.102s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 74.0.3729.169,,,2019-06-13 09:53:55,2019-06-13 09:53:55,0.073s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 74.0.3729.169,,,2019-06-13 09:53:55,2019-06-13 09:54:08,12.625s,PASSED
+changeWebDriver(driver),Chrome 74.0.3729.169,,,2019-06-13 09:54:08,2019-06-13 09:54:08,0.392s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,,2019-06-13 09:54:08,2019-06-13 09:54:10,1.609s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 74.0.3729.169,,,2019-06-13 09:54:10,2019-06-13 09:54:17,7.263s,PASSED
+,,,,,,,
+Test Cases/02_DOB Selection,Chrome 74.0.3729.169,To select the date of birth from the date window,,2019-06-13 09:54:17,2019-06-13 09:54:27,9.911s,FAILED
+"click(findTestObject(""e-Cancer/Next""))",Chrome 74.0.3729.169,,,2019-06-13 09:54:19,2019-06-13 09:54:22,3.352s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter your Date of Birth"")",Chrome 74.0.3729.169,,,2019-06-13 09:54:22,2019-06-13 09:54:23,0.920s,PASSED
+"sendKeys(findTestObject(""e-Cancer/DOB""), ""12/23/1980"")",Chrome 74.0.3729.169,,,2019-06-13 09:54:23,2019-06-13 09:54:25,1.736s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/DOB Feedback Message""), ""Please enter a valid Date of Birth"")",Chrome 74.0.3729.169,,,2019-06-13 09:54:25,2019-06-13 09:54:27,2.483s,FAILED

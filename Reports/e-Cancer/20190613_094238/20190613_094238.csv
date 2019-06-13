@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,,To test e-Cancer functionalities,,2019-06-13 09:42:47,2019-06-13 09:43:01,13.917s,ERROR
+,,,,,,,
+Test Cases/00_Browser Navigation,,To open the browser and naviage to the specific URL,,2019-06-13 09:42:48,2019-06-13 09:42:59,11.305s,ERROR
+options = new org.openqa.selenium.chrome.ChromeOptions(),,,,2019-06-13 09:42:49,2019-06-13 09:42:49,0.088s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),,,,2019-06-13 09:42:49,2019-06-13 09:42:49,0.018s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",,,,2019-06-13 09:42:49,2019-06-13 09:42:49,0.072s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",,,,2019-06-13 09:42:49,2019-06-13 09:42:49,0.070s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),,,,2019-06-13 09:42:49,2019-06-13 09:42:59,9.436s,PASSED
+,,,,,,,
+Test Cases/99_Complete,,,,2019-06-13 09:42:59,2019-06-13 09:43:00,1.534s,FAILED
+"setText(findTestObject(""e-Cancer/DOB""), ""13/12/1981"")",,,,2019-06-13 09:43:00,2019-06-13 09:43:00,0.852s,FAILED

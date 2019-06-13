@@ -19,19 +19,19 @@
    <testCaseLink>
       <guid>86bb0cd2-0899-48c5-afa8-07882d1dfb18</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/01_Language Toggle</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>05e3b569-cdae-4c8e-8dec-4f6a62b16dfe</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/02_DOB Selection</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8b54beef-e79d-4e99-a70b-573ea232ec5a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/03_Gender</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -39,5 +39,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/10_Underwriting Question - Question</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2e019378-c7ad-4c00-a5bf-2ef11dd887b3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/99_Complete</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

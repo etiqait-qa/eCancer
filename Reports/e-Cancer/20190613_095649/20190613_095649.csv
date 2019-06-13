@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 74.0.3729.169,To test e-Cancer functionalities,,2019-06-13 09:56:56,2019-06-13 09:57:21,24.678s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 74.0.3729.169,To open the browser and naviage to the specific URL,,2019-06-13 09:56:57,2019-06-13 09:57:14,17.528s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 74.0.3729.169,,,2019-06-13 09:56:58,2019-06-13 09:56:58,0.080s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 74.0.3729.169,,,2019-06-13 09:56:58,2019-06-13 09:56:58,0.012s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 74.0.3729.169,,,2019-06-13 09:56:58,2019-06-13 09:56:59,0.068s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 74.0.3729.169,,,2019-06-13 09:56:59,2019-06-13 09:56:59,0.048s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 74.0.3729.169,,,2019-06-13 09:56:59,2019-06-13 09:57:08,9.465s,PASSED
+changeWebDriver(driver),Chrome 74.0.3729.169,,,2019-06-13 09:57:08,2019-06-13 09:57:08,0.238s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,,2019-06-13 09:57:08,2019-06-13 09:57:10,1.256s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 74.0.3729.169,,,2019-06-13 09:57:10,2019-06-13 09:57:14,4.953s,PASSED
+,,,,,,,
+Test Cases/99_Complete,Chrome 74.0.3729.169,,,2019-06-13 09:57:15,2019-06-13 09:57:19,4.484s,FAILED
+"setText(findTestObject(""e-Cancer/DOB""), ""13/12/1981"")",Chrome 74.0.3729.169,,,2019-06-13 09:57:16,2019-06-13 09:57:18,2.266s,PASSED
+"click(findTestObject(""e-Cancer/Form Instruction""))",Chrome 74.0.3729.169,,,2019-06-13 09:57:18,2019-06-13 09:57:18,0.328s,PASSED
+"click(findTestObject(""e-Cancer/Gender - Male""))",Chrome 74.0.3729.169,,,2019-06-13 09:57:18,2019-06-13 09:57:19,0.866s,FAILED

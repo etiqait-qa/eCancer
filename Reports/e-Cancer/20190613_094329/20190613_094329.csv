@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,,To test e-Cancer functionalities,,2019-06-13 09:43:38,2019-06-13 09:43:53,15.501s,ERROR
+,,,,,,,
+Test Cases/00_Browser Navigation,,To open the browser and naviage to the specific URL,,2019-06-13 09:43:38,2019-06-13 09:43:51,12.583s,ERROR
+options = new org.openqa.selenium.chrome.ChromeOptions(),,,,2019-06-13 09:43:40,2019-06-13 09:43:40,0.095s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),,,,2019-06-13 09:43:40,2019-06-13 09:43:40,0.024s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",,,,2019-06-13 09:43:40,2019-06-13 09:43:40,0.079s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",,,,2019-06-13 09:43:40,2019-06-13 09:43:41,0.059s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),,,,2019-06-13 09:43:41,2019-06-13 09:43:51,10.328s,PASSED
+,,,,,,,
+Test Cases/01_Language Toggle,,To test language toggle for the page,,2019-06-13 09:43:51,2019-06-13 09:43:53,1.899s,FAILED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",,,,2019-06-13 09:43:52,2019-06-13 09:43:53,1.154s,FAILED

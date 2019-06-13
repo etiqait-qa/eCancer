@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 74.0.3729.169,To test e-Cancer functionalities,,2019-06-13 09:44:43,2019-06-13 09:45:18,35.710s,PASSED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 74.0.3729.169,To open the browser and naviage to the specific URL,,2019-06-13 09:44:44,2019-06-13 09:45:07,23.598s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 74.0.3729.169,,,2019-06-13 09:44:45,2019-06-13 09:44:46,0.116s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 74.0.3729.169,,,2019-06-13 09:44:46,2019-06-13 09:44:46,0.015s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 74.0.3729.169,,,2019-06-13 09:44:46,2019-06-13 09:44:46,0.092s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 74.0.3729.169,,,2019-06-13 09:44:46,2019-06-13 09:44:46,0.067s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 74.0.3729.169,,,2019-06-13 09:44:46,2019-06-13 09:45:00,14.629s,PASSED
+changeWebDriver(driver),Chrome 74.0.3729.169,,,2019-06-13 09:45:00,2019-06-13 09:45:01,0.257s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,,2019-06-13 09:45:01,2019-06-13 09:45:02,1.171s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 74.0.3729.169,,,2019-06-13 09:45:02,2019-06-13 09:45:07,5.256s,PASSED
+,,,,,,,
+Test Cases/01_Language Toggle,Chrome 74.0.3729.169,To test language toggle for the page,,2019-06-13 09:45:07,2019-06-13 09:45:16,8.953s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""B.Malaysia"", false)",Chrome 74.0.3729.169,,,2019-06-13 09:45:08,2019-06-13 09:45:13,4.681s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Sila lengkapkan borang berikut"")",Chrome 74.0.3729.169,,,2019-06-13 09:45:13,2019-06-13 09:45:13,0.531s,PASSED
+"selectOptionByLabel(findTestObject(""e-Cancer/Language Option""), ""English"", false)",Chrome 74.0.3729.169,,,2019-06-13 09:45:13,2019-06-13 09:45:16,2.458s,PASSED
+"verifyElementText(findTestObject(""e-Cancer/Form Instruction""), ""Please complete the form below"")",Chrome 74.0.3729.169,,,2019-06-13 09:45:16,2019-06-13 09:45:16,0.264s,PASSED

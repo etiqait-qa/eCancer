@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+e-Cancer,Chrome 74.0.3729.169,To test e-Cancer functionalities,,2019-06-13 10:25:41,2019-06-13 10:26:23,41.702s,FAILED
+,,,,,,,
+Test Cases/00_Browser Navigation,Chrome 74.0.3729.169,To open the browser and naviage to the specific URL,,2019-06-13 10:25:42,2019-06-13 10:26:05,22.760s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 74.0.3729.169,,,2019-06-13 10:25:44,2019-06-13 10:25:45,0.113s,PASSED
+capabilities = new org.openqa.selenium.remote.DesiredCapabilities(),Chrome 74.0.3729.169,,,2019-06-13 10:25:45,2019-06-13 10:25:45,0.093s,PASSED
+"capabilities.setCapability(CAPABILITY, options)",Chrome 74.0.3729.169,,,2019-06-13 10:25:45,2019-06-13 10:25:45,0.107s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", getChromeDriverPath())",Chrome 74.0.3729.169,,,2019-06-13 10:25:45,2019-06-13 10:25:45,0.069s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(capabilities),Chrome 74.0.3729.169,,,2019-06-13 10:25:45,2019-06-13 10:25:55,10.133s,PASSED
+changeWebDriver(driver),Chrome 74.0.3729.169,,,2019-06-13 10:25:55,2019-06-13 10:25:55,0.432s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,,2019-06-13 10:25:55,2019-06-13 10:25:57,1.618s,PASSED
+"navigateToUrl(""https://172.29.74.134:4442/cancer-care/en/takaful/qq1"")",Chrome 74.0.3729.169,,,2019-06-13 10:25:57,2019-06-13 10:26:05,7.685s,PASSED
+,,,,,,,
+Test Cases/99_Complete,Chrome 74.0.3729.169,,,2019-06-13 10:26:05,2019-06-13 10:26:20,15.338s,FAILED
+"sendKeys(findTestObject(""e-Cancer/DOB""), ""13/12/1981"")",Chrome 74.0.3729.169,,,2019-06-13 10:26:06,2019-06-13 10:26:09,3.107s,PASSED
+"click(findTestObject(""e-Cancer/Form Instruction""))",Chrome 74.0.3729.169,,,2019-06-13 10:26:09,2019-06-13 10:26:10,0.729s,PASSED
+delay(2),Chrome 74.0.3729.169,,,2019-06-13 10:26:10,2019-06-13 10:26:12,2.101s,PASSED
+"click(findTestObject(""e-Cancer/Gender/Gender - Female""))",Chrome 74.0.3729.169,,,2019-06-13 10:26:12,2019-06-13 10:26:13,0.602s,PASSED
+"click(findTestObject(""e-Cancer/Package Selection""))",Chrome 74.0.3729.169,,,2019-06-13 10:26:13,2019-06-13 10:26:13,0.736s,PASSED
+"click(findTestObject(""e-Cancer/Package Screen Objects/button_Save""))",Chrome 74.0.3729.169,,,2019-06-13 10:26:13,2019-06-13 10:26:14,0.918s,PASSED
+delay(5),Chrome 74.0.3729.169,,,2019-06-13 10:26:14,2019-06-13 10:26:19,5.015s,PASSED
+"click(findTestObject(""Contribution/Monthly""))",Chrome 74.0.3729.169,,,2019-06-13 10:26:19,2019-06-13 10:26:20,0.832s,FAILED
