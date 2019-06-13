@@ -19,9 +19,9 @@ WebUI.sendKeys(findTestObject('e-Cancer/DOB'), '01/01/1980')
 WebUI.click(findTestObject('e-Cancer/Form Instruction'))
 
 if (GlobalVariable.Gender == 'Male') {
-    WebUI.click(findTestObject('e-Cancer/Gender - Male'))
+    WebUI.click(findTestObject('e-Cancer/Gender/Gender - Male'))
 } else if (GlobalVariable.Gender == 'Female') {
-    WebUI.click(findTestObject('e-Cancer/Gender - Female'))
+    WebUI.click(findTestObject('e-Cancer/Gender/Gender - Female'))
 }
 
 WebUI.click(findTestObject('e-Cancer/Package Selection'))

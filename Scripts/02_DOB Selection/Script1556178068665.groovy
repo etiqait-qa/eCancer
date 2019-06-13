@@ -17,11 +17,11 @@ WebUI.click(findTestObject('e-Cancer/Next'))
 
 WebUI.verifyElementText(findTestObject('e-Cancer/DOB Feedback Message'), 'Please enter your Date of Birth')
 
-/*WebUI.setText(findTestObject('e-Cancer/DOB'), '12/23/1980')
+/*WebUI.sendKeys(findTestObject('e-Cancer/DOB'), '12/23/1980')
 
 WebUI.verifyElementText(findTestObject('e-Cancer/DOB Feedback Message'), 'Please enter a valid Date of Birth')
 */
-WebUI.setText(findTestObject('e-Cancer/DOB'), '01/01/2018')
+WebUI.sendKeys(findTestObject('e-Cancer/DOB'), '01/01/2018')
 
 WebUI.verifyElementText(findTestObject('e-Cancer/DOB Feedback Message'), 'Sorry, you are not eligible for this insurance because you did not meet the minimum age limit')
 

@@ -13,13 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('e-Cancer/Next'))
+WebUI.sendKeys(findTestObject('e-Cancer/DOB'), '13/12/1981')
 
-WebUI.verifyElementText(findTestObject('e-Cancer/Gender/Gender Feedback Message'), 'Please select your Gender')
+WebUI.click(findTestObject('e-Cancer/Form Instruction'))
 
-WebUI.click(findTestObject('e-Cancer/Gender/Gender - Male'))
-
-WebUI.verifyElementNotVisible(findTestObject('e-Cancer/Gender/Gender Feedback Message'), FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('e-Cancer/Gender/Gender - Female'))
+
+WebUI.click(findTestObject('e-Cancer/Package Selection'))
+
+WebUI.click(findTestObject('e-Cancer/Package Screen Objects/button_Save'))
+
+WebUI.delay(5)
+
+WebUI.focus(findTestObject('e-Cancer/Contribution/Monthly'))
+
+WebUI.click(findTestObject('Contribution/Monthly'))
+
+WebUI.click(findTestObject('e-Cancer/Next'))
 
